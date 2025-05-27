@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taniti Travel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">Taniti Travel</div>
+      <nav>
+        <ul>
+          <li><a href="about.html" id="nav-about">About</a></li>
+          <li><a href="attractions.html" id="nav-attractions">Attractions</a></li>
+          <li><a href="contact.html" id="nav-contact">Contact</a></li>
+          <li>
+            <a href="booking.html" id="nav-booking">Booking &#9662;</a>
+            <ul class="dropdown">
+              <li><a href="booking.html">Accommodations</a></li>
+              <li><a href="booking.html">Activities</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <main>
+        <section class="hero">
+            <h2 style="color:#0074d9;">HOME</h2>
+            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                Bibendum amet at molestie mattis.</h1>
+            <p>
+                Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. 
+                Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar. 
+                Fermentum scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus iaculis.
+            </p>
+        </section>
+        <section class="content-row">
+            <div class="content-block">
+                <div class="image-placeholder">🖼️</div>
+                <strong>CAPTION</strong>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                   Bibendum amet at molestie mattis.</p>
+            </div>
+            <div class="content-block">
+                <div class="image-placeholder">🖼️</div>
+                <strong>CAPTION</strong>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                   Bibendum amet at molestie mattis.</p>
+            </div>
+            <div class="content-block">
+                <div class="image-placeholder">🖼️</div>
+                <strong>CAPTION</strong>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                   Bibendum amet at molestie mattis.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Attractions</a>
+            <a href="#">Contact</a>
+            <a href="#">Booking</a>
+        </div>
+        <div class="footer-social">
+            <span><i>🌐</i></span>
+            <span><i>📸</i></span>
+            <span><i>📧</i></span>
+        </div>
+        <div class="footer-copy">
+            &copy; Taniti Travel 20XX. All rights reserved.
+        </div>
+    </footer>
+    <script>
+        // Example: Dropdown for Booking (for accessibility)
+        document.querySelectorAll('nav ul li').forEach(function(item) {
+            item.addEventListener('mouseenter', function() {
+                let dropdown = item.querySelector('.dropdown');
+                if (dropdown) dropdown.style.display = 'block';
+            });
+            item.addEventListener('mouseleave', function() {
+                let dropdown = item.querySelector('.dropdown');
+                if (dropdown) dropdown.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>

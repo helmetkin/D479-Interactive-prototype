@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Taniti Travel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">Taniti Travel</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="booking.html">Booking &#9662;</a>
+            <ul class="dropdown">
+              <li><a href="booking.html">Accommodations</a></li>
+              <li><a href="booking.html">Activities</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="section-title">ABOUT</div>
+    <div class="main-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis.</div>
+    <div class="main-desc">
+      Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar. Fermentum scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus iaculis.
+    </div>
+    <div class="about-content-row">
+      <div class="about-block">
+        <div class="caption-title">CAPTION</div>
+        <div class="caption-headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis.</div>
+        <div class="caption-desc">
+          Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar. Fermentum scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus iaculis.
+        </div>
+      </div>
+      <div class="about-block center-img">
+        <div class="image-placeholder"></div>
+      </div>
+      <div class="about-block">
+        <div class="caption-title">CAPTION</div>
+        <div class="caption-headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis.</div>
+        <div class="caption-desc">
+          Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar. Fermentum scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus iaculis.
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="attractions.html">Attractions</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html">Booking</a>
+    </div>
+    <div class="footer-social">
+      <span><i>🌐</i></span>
+      <span><i>📸</i></span>
+      <span><i>📧</i></span>
+      <span><i>🔗</i></span>
+    </div>
+    <div class="footer-copy">
+      CompanyName © 20XX. All rights reserved.
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll('nav ul li').forEach(function(item) {
+      item.addEventListener('mouseenter', function() {
+        let dropdown = item.querySelector('.dropdown');
+        if (dropdown) dropdown.style.display = 'block';
+      });
+      item.addEventListener('mouseleave', function() {
+        let dropdown = item.querySelector('.dropdown');
+        if (dropdown) dropdown.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+</html>

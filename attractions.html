@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taniti Travel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+ <header>
+    <div class="nav-container">
+      <div class="logo">Taniti Travel</div>
+      <nav>
+        <ul>
+          <li><a href="about.html" id="nav-about">About</a></li>
+          <li><a href="attractions.html" id="nav-attractions">Attractions</a></li>
+          <li><a href="contact.html" id="nav-contact">Contact</a></li>
+          <li>
+            <a href="booking.html" id="nav-booking">Booking &#9662;</a>
+            <ul class="dropdown">
+              <li><a href="booking.html">Accommodations</a></li>
+              <li><a href="booking.html">Activities</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<main>
+ 
+
+    <main>
+    <div class="section-title">Explore Taniti</div>
+    <div class="main-title">  Discover breathtaking landscapes, rich cultures, and unforgettable experiences. From serene beaches to vibrant cityscapes, our attractions offer something for every traveler.</div>
+    <div class="icon-row">
+      <div class="content-block">
+        <div class="image-placeholder"><span style="font-size:2.5em;">🖼️</span></div>
+      </div>
+      <div class="content-block">
+        <div class="image-placeholder"><span style="font-size:2.5em;">🖼️</span></div>
+      </div>
+      <div class="content-block">
+        <div class="image-placeholder"><span style="font-size:2.5em;">🖼️</span></div>
+      </div>
+      <div class="content-block">
+        <div class="image-placeholder"><span style="font-size:2.5em;">🖼️</span></div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:center;margin:2em 0;">
+      <a href="#" class="primary-btn">Primary Action</a>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-nav">
+      <a href="about.html">About</a>
+      <a href="attractions.html">Attractions</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html">Booking</a>
+    </div>
+    <div class="footer-social">
+      <span><i>🌐</i></span>
+      <span><i>📸</i></span>
+      <span><i>📧</i></span>
+      <span><i>🔗</i></span>
+    </div>
+    <div class="footer-copy">
+      CompanyName © 20XX. All rights reserved.
+    </div>
+  </footer>
+  <script>
+    // Highlight active nav link
+    const page = window.location.pathname.split('/').pop();
+    if (page.includes('about')) document.getElementById('nav-about').classList.add('active');
+    if (page.includes('attractions')) document.getElementById('nav-attractions').classList.add('active');
+    if (page.includes('contact')) document.getElementById('nav-contact').classList.add('active');
+    if (page.includes('booking')) document.getElementById('nav-booking').classList.add('active');
+    // Dropdown for Booking
+    document.querySelectorAll('nav ul li').forEach(function(item) {
+      item.addEventListener('mouseenter', function() {
+        let dropdown = item.querySelector('.dropdown');
+        if (dropdown) dropdown.style.display = 'block';
+      });
+      item.addEventListener('mouseleave', function() {
+        let dropdown = item.querySelector('.dropdown');
+        if (dropdown) dropdown.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+</html>
