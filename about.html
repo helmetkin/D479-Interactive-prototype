@@ -28,31 +28,68 @@
     </div>
   </header>
   <main>
-    <div class="section-title">ABOUT</div>
-    <div class="main-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis.</div>
-    <div class="main-desc">
-      Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar. Fermentum scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus iaculis.
-    </div>
-    <div class="about-content-row">
-      <div class="about-block">
-        <div class="caption-title">CAPTION</div>
-        <div class="caption-headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis.</div>
-        <div class="caption-desc">
-          Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar. Fermentum scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus iaculis.
-        </div>
-      </div>
-      <div class="about-block center-img">
-        <div class="image-placeholder"></div>
-      </div>
-      <div class="about-block">
-        <div class="caption-title">CAPTION</div>
-        <div class="caption-headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis.</div>
-        <div class="caption-desc">
-          Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar. Fermentum scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus iaculis.
-        </div>
+  <div class="section-title">ABOUT</div>
+  <div class="main-title">
+    Taniti is a small, tropical island in the Pacific. 
+  </div>
+  <div class="main-desc">
+    While the island has an area of less than 500 square miles, the terrain is varied and includes both sandy and rocky beaches, a small but safe harbor, lush tropical rainforests, and a mountainous interior that includes a small, active volcano.
+    Taniti has an indigenous population of about 20,000. Until a recent increase in tourism, most of the Tanitian economy was dominated by fishing or agriculture.
+  </div>
+  <div class="about-content-row">
+    <div class="about-block">
+      <div class="caption-title">ECONOMY</div>
+      <div class="caption-headline">A Changing Island</div>
+      <div class="caption-desc">
+        With the rise in tourism, Taniti has seen a shift from a fishing- and agriculture-based economy to one that now welcomes visitors from around the world. The island is working to balance economic growth with the preservation of its unique culture and natural beauty.
       </div>
     </div>
-  </main>
+    <div class="about-block center-img">
+      <div class="image-placeholder"></div>
+    </div>
+    <div class="about-block">
+      <div class="caption-title">COMMUNITY</div>
+      <div class="caption-headline">Warm & Welcoming</div>
+      <div class="caption-desc">
+        The people of Taniti are known for their hospitality. Visitors often remark on the friendly atmosphere and the opportunity to experience both traditional and modern Tanitian life.
+      </div>
+    </div>
+  </div>
+  <section class="faq-section">
+    <h2 class="section-title" style="margin-top:2em;">Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">What type of power outlets does Taniti use?</button>
+        <div class="faq-answer">Power outlets are 120 volts (the same as in the United States).</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What are the alcohol laws on Taniti?</button>
+        <div class="faq-answer">Alcohol is not allowed to be served or sold between midnight and 9:00 a.m. The drinking age is 18 and is not strictly enforced.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is English spoken on the island?</button>
+        <div class="faq-answer">Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by older residents.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What healthcare facilities are available?</button>
+        <div class="faq-answer">There is one hospital and several clinics. The hospital has many multilingual employees.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is Taniti safe for tourists?</button>
+        <div class="faq-answer">Violent crime is very rare, but as tourism increases, there are more reports of pickpocketing and other petty crimes.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Are there any holidays that affect tourism?</button>
+        <div class="faq-answer">Taniti enjoys many national holidays, and many tourist attractions and restaurants will be closed on holidays, so visitors should plan accordingly.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What currency is used on Taniti?</button>
+        <div class="faq-answer">Taniti uses the U.S. dollar as its currency, but many businesses also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.</div>
+      </div>
+    </div>
+  </section>
+</main>
+
   <footer>
     <div class="footer-nav">
       <a href="index.html">Home</a>
@@ -82,6 +119,12 @@
         if (dropdown) dropdown.style.display = 'none';
       });
     });
+     document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const parent = btn.parentElement;
+      parent.classList.toggle('active');
+    });
+  });
   </script>
 </body>
 </html>
