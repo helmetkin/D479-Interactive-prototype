@@ -111,8 +111,8 @@ min-width: 200px;
 }
 
 .image-placeholder {
-width: 100px;
-height: 100px;
+width: 200px;
+height: 200px;
 background: #ddd;
 margin: 0 auto 1em auto;
 display: flex;
@@ -121,7 +121,25 @@ justify-content: center;
 color: #aaa;
 font-size: 2em;
 border-radius: 8px;
+object-fit: cover;
 }
+
+.image-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensures it fills the parent block */
+  width: 100%;
+}
+
+.about-image {
+  width: 160px;    /* Adjust as needed */
+  height: 160px;   /* Adjust as needed */
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
 
 .caption-title {
 color: #2a3eb1;
