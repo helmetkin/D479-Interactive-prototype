@@ -330,3 +330,72 @@ gap: 1em;
 .faq-item.active .faq-answer {
   display: block;
 }
+
+.transport-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.transport-card {
+  background: #fafbfc;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 1.5em;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transport-img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+.transport-desc {
+  text-align: center;
+  font-size: 1em;
+}
+
+.transport-map-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transport-map-img {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.booking {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 0 0;
+  margin-bottom: auto;
+}
+
+.primary-btn {
+  padding: 1em 2.5em;
+  font-size: 1.2em;
+  background: #0074d9;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.primary-btn:hover {
+  background: #005fa3;
+}
